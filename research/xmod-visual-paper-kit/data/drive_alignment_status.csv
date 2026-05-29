@@ -1,0 +1,5 @@
+drive,status,evidence_type,current_metric,next_required_check,public_claim_boundary
+Safety,measured,event-label correlation,gate_safety_event_corr=0.8035,replicate labels and add visual trace review,safety-gate alignment evidence under the included offline protocol
+Legality,pending,descriptive router weight only,mean_weight=0.4199,define traffic-rule event labels and run gate-event correlation,No legality-drive explainability claim yet
+Comfort,pending,descriptive router weight only,mean_weight=0.3510,define jerk and yaw event labels and run gate-event correlation,No comfort-drive explainability claim yet
+Efficiency,pending,descriptive router weight only,mean_weight=0.1305,define progress and route-efficiency event labels and run gate-event correlation,No efficiency-drive explainability claim yet

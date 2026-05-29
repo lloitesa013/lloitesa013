@@ -3,11 +3,13 @@
 from __future__ import annotations
 
 import csv
+from html import escape
 from pathlib import Path
 
 
 KIT_ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = KIT_ROOT / "data" / "xmod_paper_results_summary.csv"
+DRIVE_STATUS_PATH = KIT_ROOT / "data" / "drive_alignment_status.csv"
 ASSET_DIR = KIT_ROOT / "assets"
 PRIMARY_RUN = "ce_align_safety_all"
 
@@ -23,6 +25,12 @@ def read_rows():
     return rows
 
 
+def read_drive_status_rows():
+    with DRIVE_STATUS_PATH.open("r", encoding="utf-8", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    return rows
+
+
 def number(row, key):
     return float(row[key])
 
@@ -31,7 +39,7 @@ def svg_page(title, subtitle, body, width=900, height=520):
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{title}">
   <defs>
     <style>
-      .bg{{fill:#f7f9fb}}.axis{{stroke:#263238;stroke-width:2}}.grid{{stroke:#d7dde2;stroke-width:1}}.bar1{{fill:#176b87}}.bar2{{fill:#7c4d1d}}.bar3{{fill:#2f6f4e}}.txt{{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172026}}.muted{{fill:#5f6b73}}.title{{font-size:28px;font-weight:700}}.label{{font-size:15px;font-weight:700}}.small{{font-size:13px}}
+      .bg{{fill:#f7f9fb}}.axis{{stroke:#263238;stroke-width:2}}.grid{{stroke:#d7dde2;stroke-width:1}}.bar1{{fill:#176b87}}.bar2{{fill:#7c4d1d}}.bar3{{fill:#2f6f4e}}.ok{{fill:#176b87}}.pending{{fill:#a35b00}}.card{{fill:#fff;stroke:#d7dde2;stroke-width:1}}.txt{{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172026}}.muted{{fill:#5f6b73}}.title{{font-size:28px;font-weight:700}}.label{{font-size:15px;font-weight:700}}.small{{font-size:13px}}
     </style>
   </defs>
   <rect class="bg" width="{width}" height="{height}"/>
@@ -143,8 +151,43 @@ def render_drive_weights(primary):
     )
 
 
+def render_drive_alignment_status(rows):
+    y_positions = [138, 218, 298, 378]
+    body = """
+  <rect class="card" x="60" y="105" width="780" height="330" rx="8"/>
+  <text class="txt label" x="86" y="130">Drive</text>
+  <text class="txt label" x="205" y="130">Status</text>
+  <text class="txt label" x="330" y="130">Evidence</text>
+  <text class="txt label" x="560" y="130">Current Metric</text>
+  <line class="grid" x1="80" y1="148" x2="820" y2="148"/>
+"""
+    for index, row in enumerate(rows):
+        y = y_positions[index]
+        status = row["status"].lower()
+        klass = "ok" if status == "measured" else "pending"
+        body += f"""
+  <text class="txt label" x="86" y="{y}">{escape(row['drive'])}</text>
+  <rect class="{klass}" x="205" y="{y - 18}" width="88" height="26" rx="13"/>
+  <text class="txt small" x="218" y="{y}">{escape(row['status'].upper())}</text>
+  <text class="txt small" x="330" y="{y}">{escape(row['evidence_type'])}</text>
+  <text class="txt small" x="560" y="{y}">{escape(row['current_metric'])}</text>
+  <text class="txt muted small" x="330" y="{y + 22}">{escape(row['public_claim_boundary'])}</text>
+  <line class="grid" x1="80" y1="{y + 38}" x2="820" y2="{y + 38}"/>
+"""
+    body += """
+  <text class="txt muted small" x="60" y="485">Boundary: one measured drive, three pending drive-specific event protocols.</text>"""
+    return svg_page(
+        "Drive Alignment Status",
+        "Measured vs pending evidence across X-MoD drives",
+        body,
+        width=900,
+        height=520,
+    )
+
+
 def main():
     rows = read_rows()
+    drive_status_rows = read_drive_status_rows()
     rows_by_name = {row["run"]: row for row in rows}
     ordered = [rows_by_name["ce_align_all"], rows_by_name["bce_all"], rows_by_name[PRIMARY_RUN]]
     ASSET_DIR.mkdir(parents=True, exist_ok=True)
@@ -152,6 +195,7 @@ def main():
         "gate_alignment.svg": render_gate_alignment(rows_by_name[PRIMARY_RUN]),
         "negative_control_comparison.svg": render_negative_controls(ordered),
         "drive_weight_summary.svg": render_drive_weights(rows_by_name[PRIMARY_RUN]),
+        "drive_alignment_status.svg": render_drive_alignment_status(drive_status_rows),
     }
     for filename, payload in outputs.items():
         path = ASSET_DIR / filename

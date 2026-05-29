@@ -32,6 +32,7 @@ Visuals:
 - [Safety Gate Alignment](assets/gate_alignment.svg)
 - [Negative-Control Comparison](assets/negative_control_comparison.svg)
 - [Primary Run Drive Weights](assets/drive_weight_summary.svg)
+- [Drive Alignment Status](assets/drive_alignment_status.svg)
 
 ## Why The Negative Controls Matter
 
@@ -48,6 +49,13 @@ This supports the narrower claim: under the included offline protocol, the safet
 The plots are regenerated from a sanitized aggregate CSV included in this kit.
 They do not require the raw CARLA workspace, local logs, checkpoints, or private
 notes.
+
+## Drive Validation Status
+
+Safety is measured with event labels and a gate-event correlation check.
+Legality, comfort, and efficiency are currently descriptive only. They should be
+treated as pending until each drive receives explicit event labels, negative
+controls, and per-drive correlation checks.
 
 ## Current Boundary
 

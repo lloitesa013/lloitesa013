@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-label="Drive Alignment Status">
+  <defs>
+    <style>
+      .bg{fill:#f7f9fb}.axis{stroke:#263238;stroke-width:2}.grid{stroke:#d7dde2;stroke-width:1}.bar1{fill:#176b87}.bar2{fill:#7c4d1d}.bar3{fill:#2f6f4e}.ok{fill:#176b87}.pending{fill:#a35b00}.card{fill:#fff;stroke:#d7dde2;stroke-width:1}.txt{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172026}.muted{fill:#5f6b73}.title{font-size:28px;font-weight:700}.label{font-size:15px;font-weight:700}.small{font-size:13px}
+    </style>
+  </defs>
+  <rect class="bg" width="900" height="520"/>
+  <text class="txt title" x="60" y="54">Drive Alignment Status</text>
+  <text class="txt muted small" x="60" y="82">Measured vs pending evidence across X-MoD drives</text>
+
+  <rect class="card" x="60" y="105" width="780" height="330" rx="8"/>
+  <text class="txt label" x="86" y="130">Drive</text>
+  <text class="txt label" x="205" y="130">Status</text>
+  <text class="txt label" x="330" y="130">Evidence</text>
+  <text class="txt label" x="560" y="130">Current Metric</text>
+  <line class="grid" x1="80" y1="148" x2="820" y2="148"/>
+
+  <text class="txt label" x="86" y="138">Safety</text>
+  <rect class="ok" x="205" y="120" width="88" height="26" rx="13"/>
+  <text class="txt small" x="218" y="138">MEASURED</text>
+  <text class="txt small" x="330" y="138">event-label correlation</text>
+  <text class="txt small" x="560" y="138">gate_safety_event_corr=0.8035</text>
+  <text class="txt muted small" x="330" y="160">safety-gate alignment evidence under the included offline protocol</text>
+  <line class="grid" x1="80" y1="176" x2="820" y2="176"/>
+
+  <text class="txt label" x="86" y="218">Legality</text>
+  <rect class="pending" x="205" y="200" width="88" height="26" rx="13"/>
+  <text class="txt small" x="218" y="218">PENDING</text>
+  <text class="txt small" x="330" y="218">descriptive router weight only</text>
+  <text class="txt small" x="560" y="218">mean_weight=0.4199</text>
+  <text class="txt muted small" x="330" y="240">No legality-drive explainability claim yet</text>
+  <line class="grid" x1="80" y1="256" x2="820" y2="256"/>
+
+  <text class="txt label" x="86" y="298">Comfort</text>
+  <rect class="pending" x="205" y="280" width="88" height="26" rx="13"/>
+  <text class="txt small" x="218" y="298">PENDING</text>
+  <text class="txt small" x="330" y="298">descriptive router weight only</text>
+  <text class="txt small" x="560" y="298">mean_weight=0.3510</text>
+  <text class="txt muted small" x="330" y="320">No comfort-drive explainability claim yet</text>
+  <line class="grid" x1="80" y1="336" x2="820" y2="336"/>
+
+  <text class="txt label" x="86" y="378">Efficiency</text>
+  <rect class="pending" x="205" y="360" width="88" height="26" rx="13"/>
+  <text class="txt small" x="218" y="378">PENDING</text>
+  <text class="txt small" x="330" y="378">descriptive router weight only</text>
+  <text class="txt small" x="560" y="378">mean_weight=0.1305</text>
+  <text class="txt muted small" x="330" y="400">No efficiency-drive explainability claim yet</text>
+  <line class="grid" x1="80" y1="416" x2="820" y2="416"/>
+
+  <text class="txt muted small" x="60" y="485">Boundary: one measured drive, three pending drive-specific event protocols.</text>
+</svg>

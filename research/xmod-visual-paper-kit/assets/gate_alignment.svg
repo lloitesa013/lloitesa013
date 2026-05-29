@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-label="Safety Gate Alignment">
   <defs>
     <style>
-      .bg{fill:#f7f9fb}.axis{stroke:#263238;stroke-width:2}.grid{stroke:#d7dde2;stroke-width:1}.bar1{fill:#176b87}.bar2{fill:#7c4d1d}.bar3{fill:#2f6f4e}.txt{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172026}.muted{fill:#5f6b73}.title{font-size:28px;font-weight:700}.label{font-size:15px;font-weight:700}.small{font-size:13px}
+      .bg{fill:#f7f9fb}.axis{stroke:#263238;stroke-width:2}.grid{stroke:#d7dde2;stroke-width:1}.bar1{fill:#176b87}.bar2{fill:#7c4d1d}.bar3{fill:#2f6f4e}.ok{fill:#176b87}.pending{fill:#a35b00}.card{fill:#fff;stroke:#d7dde2;stroke-width:1}.txt{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172026}.muted{fill:#5f6b73}.title{font-size:28px;font-weight:700}.label{font-size:15px;font-weight:700}.small{font-size:13px}
     </style>
   </defs>
   <rect class="bg" width="900" height="520"/>
