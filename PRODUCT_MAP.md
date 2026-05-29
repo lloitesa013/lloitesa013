@@ -4,6 +4,23 @@ This is the build queue after the archive is organized. It prevents new
 projects from being started before the existing recipes are turned into usable
 systems.
 
+## Two-Week Alignment Gate
+
+This phase is complete when:
+
+- The GitHub first screen is understandable in 30 seconds.
+- The public/private boundary is fixed in `PUBLIC_PRIVATE_SPLIT.md`.
+- Every project can be explained as one judgment-layer lineage.
+- Cognitive OS is visible as the flagship face.
+- Financial Agent Evidence OS is visible as evidence discipline, not a trading
+  product.
+- X-MoD and Angelos OS are visible as the autonomous-driving research roots.
+- The next implementation step is visible from this product map.
+
+This phase does not include starting new projects, adding new product features,
+rewriting all paper drafts, publishing sensitive private material, or making
+unbounded benchmark, AGI, safety, performance, or guarantee claims.
+
 ## Priority 1: Cognitive OS Demo Polish
 
 **Purpose:** make the LLM decision protocol understandable to a mentor or

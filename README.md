@@ -7,6 +7,16 @@ user-governed, and evidence-bound. I do not build more impressive AI outputs;
 I build reference architectures that test whether AI outputs and claims can be
 trusted, scoped, reviewed, and sealed as evidence.
 
+## 30-Second Map
+
+- **Face:** Cognitive OS, a decision verification protocol above LLMs.
+- **Evidence discipline:** Financial Agent Evidence OS, a claim and release-gate
+  system for financial AI agents.
+- **Research roots:** X-MoD and Angelos OS, autonomous-driving judgment-layer
+  research.
+- **Next work:** polish the existing demos and evidence kits before starting new
+  projects.
+
 ## Flagship Work
 
 ### Cognitive OS API
