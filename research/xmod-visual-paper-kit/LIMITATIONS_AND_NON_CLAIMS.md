@@ -7,6 +7,7 @@
 - Closed-loop evidence is useful as stress-test support, but the primary discriminator in this kit is offline gate-event alignment and ablation evidence.
 - The C2 partial-state expert result is mixed. It improves routing consistency in parts of the regime but should not be framed as universally better.
 - This kit is a sanitized visual packet. It is not a full reproduction package.
+- The included CSV is aggregate evidence only. It is not the raw dataset, training log, or CARLA workspace.
 
 ## Non-Claims
 
@@ -19,4 +20,3 @@
 ## Public Use Rule
 
 Use the phrase "safety-gate alignment evidence under the included offline protocol" rather than broad safety or benchmark language.
-

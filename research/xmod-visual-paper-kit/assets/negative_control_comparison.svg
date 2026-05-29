@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-label="Negative-Control Comparison">
+  <defs>
+    <style>
+      .bg{fill:#f7f9fb}.axis{stroke:#263238;stroke-width:2}.grid{stroke:#d7dde2;stroke-width:1}.bar1{fill:#176b87}.bar2{fill:#7c4d1d}.bar3{fill:#2f6f4e}.txt{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172026}.muted{fill:#5f6b73}.title{font-size:28px;font-weight:700}.label{font-size:15px;font-weight:700}.small{font-size:13px}
+    </style>
+  </defs>
+  <rect class="bg" width="900" height="520"/>
+  <text class="txt title" x="60" y="54">Negative-Control Comparison</text>
+  <text class="txt muted small" x="60" y="82">Safety gate/event correlation across paper runs</text>
+
+  <line class="axis" x1="100" y1="360" x2="780" y2="360"/>
+  <line class="axis" x1="100" y1="120" x2="100" y2="430"/>
+  <line class="grid" x1="100" y1="250" x2="780" y2="250"/>
+  <line class="grid" x1="100" y1="420" x2="780" y2="420"/>
+  <text class="txt small" x="60" y="365">0.0</text>
+  <text class="txt small" x="58" y="255">high</text>
+  <text class="txt small" x="54" y="425">negative</text>
+  <rect class="bar1" x="150" y="360.0" width="140" height="8.2"/>
+  <text class="txt label" x="150" y="390.2">-0.0301</text>
+  <text class="txt label" x="140" y="455">CE align</text>
+  <rect class="bar2" x="370" y="294.5" width="140" height="65.5"/>
+  <text class="txt label" x="370" y="284.5">0.2392</text>
+  <text class="txt label" x="360" y="455">BCE</text>
+  <rect class="bar3" x="590" y="140.0" width="140" height="220.0"/>
+  <text class="txt label" x="590" y="130.0">0.8035</text>
+  <text class="txt label" x="580" y="455">Safety align</text>
+  <text class="txt muted small" x="60" y="490">Controls show that low action error alone does not establish semantic gate-event alignment.</text>
+</svg>

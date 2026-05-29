@@ -1,12 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-label="X-MoD safety gate alignment plot">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-label="Safety Gate Alignment">
   <defs>
     <style>
-      .bg{fill:#f7f9fb}.axis{stroke:#263238;stroke-width:2}.grid{stroke:#d7dde2;stroke-width:1}.bar1{fill:#176b87}.bar2{fill:#7c4d1d}.txt{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172026}.muted{fill:#5f6b73}.title{font-size:28px;font-weight:700}.label{font-size:16px;font-weight:700}.small{font-size:13px}
+      .bg{fill:#f7f9fb}.axis{stroke:#263238;stroke-width:2}.grid{stroke:#d7dde2;stroke-width:1}.bar1{fill:#176b87}.bar2{fill:#7c4d1d}.bar3{fill:#2f6f4e}.txt{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172026}.muted{fill:#5f6b73}.title{font-size:28px;font-weight:700}.label{font-size:15px;font-weight:700}.small{font-size:13px}
     </style>
   </defs>
   <rect class="bg" width="900" height="520"/>
   <text class="txt title" x="60" y="54">Safety Gate Alignment</text>
   <text class="txt muted small" x="60" y="82">Primary run: ce_align_safety_all, 11,500 samples</text>
+
   <line class="axis" x1="110" y1="420" x2="760" y2="420"/>
   <line class="axis" x1="110" y1="120" x2="110" y2="420"/>
   <line class="grid" x1="110" y1="360" x2="760" y2="360"/>
@@ -20,10 +21,9 @@
   <text class="txt small" x="70" y="185">0.8</text>
   <rect class="bar1" x="210" y="223.8" width="150" height="196.2"/>
   <rect class="bar2" x="510" y="409.0" width="150" height="11.0"/>
-  <text class="txt label" x="214" y="214">0.6541</text>
-  <text class="txt label" x="518" y="398">0.0367</text>
+  <text class="txt label" x="214" y="213.8">0.6541</text>
+  <text class="txt label" x="518" y="394.0">0.0367</text>
   <text class="txt label" x="202" y="455">Event</text>
   <text class="txt label" x="490" y="455">Non-event</text>
   <text class="txt muted small" x="60" y="490">gate_safety_event_corr = 0.8035. Scoped alignment evidence under the included offline protocol.</text>
 </svg>
-

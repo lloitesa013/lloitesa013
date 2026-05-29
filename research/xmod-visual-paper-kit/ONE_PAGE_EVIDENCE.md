@@ -27,6 +27,12 @@ The central test asks whether the safety gate activates on safety-relevant event
 | Router accuracy | 0.7616 |
 | Mean latency | 1.5435 ms |
 
+Visuals:
+
+- [Safety Gate Alignment](assets/gate_alignment.svg)
+- [Negative-Control Comparison](assets/negative_control_comparison.svg)
+- [Primary Run Drive Weights](assets/drive_weight_summary.svg)
+
 ## Why The Negative Controls Matter
 
 The controls show that low action error or low latency alone does not prove explainable routing. In the primary comparison:
@@ -37,7 +43,12 @@ The controls show that low action error or low latency alone does not prove expl
 
 This supports the narrower claim: under the included offline protocol, the safety-aware setting produces a gate that is quantitatively aligned with safety events.
 
+## Regeneration Boundary
+
+The plots are regenerated from a sanitized aggregate CSV included in this kit.
+They do not require the raw CARLA workspace, local logs, checkpoints, or private
+notes.
+
 ## Current Boundary
 
 This is research evidence for explainable routing under the included protocol. It is not a real-world deployment claim, not external benchmark dominance, and not proof that all four drives are equally validated.
-

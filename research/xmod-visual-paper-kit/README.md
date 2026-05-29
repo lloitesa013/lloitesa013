@@ -11,7 +11,9 @@ This kit is not the full raw CARLA workspace. It is a reviewer-facing visual pac
 1. [One-Page Evidence](ONE_PAGE_EVIDENCE.md)
 2. [Four-Drive Routing Diagram](assets/xmod_architecture.svg)
 3. [Gate Alignment Plot](assets/gate_alignment.svg)
-4. [Limitations And Non-Claims](LIMITATIONS_AND_NON_CLAIMS.md)
+4. [Negative-Control Comparison](assets/negative_control_comparison.svg)
+5. [Drive Weight Summary](assets/drive_weight_summary.svg)
+6. [Limitations And Non-Claims](LIMITATIONS_AND_NON_CLAIMS.md)
 
 ## Primary Evidence Snapshot
 
@@ -27,7 +29,15 @@ Primary result: `ce_align_safety_all` is the H3 evidence run. Safety gate activa
 
 Original PDFs, local scripts, CARLA logs, generated files, and private notes remain outside this public kit. This folder only contains sanitized summaries, diagrams, and result excerpts.
 
+## Regenerate Visuals
+
+The visual plots are generated from `data/xmod_paper_results_summary.csv`, a
+sanitized aggregate table with no local paths or raw workspace files.
+
+```powershell
+python research\xmod-visual-paper-kit\scripts\render_visuals.py
+```
+
 ## Completion Signal
 
 This kit is complete when a reviewer can understand the four-drive routing idea, the safety gate alignment evidence, the negative-control meaning, and the public claim boundary without opening the raw workspace.
-

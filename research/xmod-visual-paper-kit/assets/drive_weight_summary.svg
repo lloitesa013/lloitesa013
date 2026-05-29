@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-label="Primary Run Drive Weights">
+  <defs>
+    <style>
+      .bg{fill:#f7f9fb}.axis{stroke:#263238;stroke-width:2}.grid{stroke:#d7dde2;stroke-width:1}.bar1{fill:#176b87}.bar2{fill:#7c4d1d}.bar3{fill:#2f6f4e}.txt{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172026}.muted{fill:#5f6b73}.title{font-size:28px;font-weight:700}.label{font-size:15px;font-weight:700}.small{font-size:13px}
+    </style>
+  </defs>
+  <rect class="bg" width="900" height="520"/>
+  <text class="txt title" x="60" y="54">Primary Run Drive Weights</text>
+  <text class="txt muted small" x="60" y="82">Mean router weights for ce_align_safety_all</text>
+
+  <line class="axis" x1="100" y1="420" x2="820" y2="420"/>
+  <line class="axis" x1="100" y1="120" x2="100" y2="420"/>
+  <line class="grid" x1="100" y1="320" x2="820" y2="320"/>
+  <line class="grid" x1="100" y1="220" x2="820" y2="220"/>
+  <text class="txt small" x="64" y="425">0.0</text>
+  <text class="txt small" x="64" y="325">0.3</text>
+  <text class="txt small" x="64" y="225">0.6</text>
+  <rect class="bar1" x="130" y="390.4" width="110" height="29.6"/>
+  <text class="txt label" x="130" y="380.4">0.0987</text>
+  <text class="txt label" x="122" y="455">Safety</text>
+  <rect class="bar2" x="310" y="294.0" width="110" height="126.0"/>
+  <text class="txt label" x="310" y="284.0">0.4199</text>
+  <text class="txt label" x="302" y="455">Legality</text>
+  <rect class="bar3" x="490" y="314.7" width="110" height="105.3"/>
+  <text class="txt label" x="490" y="304.7">0.3510</text>
+  <text class="txt label" x="482" y="455">Comfort</text>
+  <rect class="bar1" x="670" y="380.9" width="110" height="39.1"/>
+  <text class="txt label" x="670" y="370.9">0.1305</text>
+  <text class="txt label" x="662" y="455">Efficiency</text>
+  <text class="txt muted small" x="60" y="490">Mean router weights are descriptive. Only safety has event-alignment evidence in this kit.</text>
+</svg>
