@@ -17,6 +17,10 @@ This kit is not the full raw CARLA workspace. It is a reviewer-facing visual pac
 7. [Related Work Positioning](RELATED_WORK.md)
 8. [Limitations And Non-Claims](LIMITATIONS_AND_NON_CLAIMS.md)
 
+## Visual First
+
+![Drive Alignment Status](assets/drive_alignment_status.svg)
+
 ## Primary Evidence Snapshot
 
 | Run | Samples | Action MSE | Router Acc | Latency ms | Safety Corr |
@@ -26,6 +30,8 @@ This kit is not the full raw CARLA workspace. It is a reviewer-facing visual pac
 | `ce_align_safety_all` | 11,500 | 0.0379 | 0.7616 | 1.5435 | 0.8035 |
 
 Primary result: `ce_align_safety_all` is the H3 evidence run. Safety gate activation separates event and non-event regions: 0.6541 vs 0.0367.
+
+Drive validation boundary: safety is measured with event-label correlation; legality, comfort, and efficiency remain pending until each has its own event labels and negative controls.
 
 ## Source Boundary
 

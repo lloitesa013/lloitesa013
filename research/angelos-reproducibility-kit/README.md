@@ -17,6 +17,11 @@ This kit is not the raw CARLA workspace. It is a scoped reproducibility packet f
 7. [Reproduction Boundary](REPRODUCTION_BOUNDARY.md)
 8. [Public Packet Runbook](RUNBOOK.md)
 
+## Visual First
+
+![Pedestrian Surprise schematic](assets/scenario_ped_surprise.svg)
+![Merge/Cut-In schematic](assets/scenario_merge_cutin.svg)
+
 ## Frozen Anchors
 
 | Scenario | Anchor | Seeds | Reading |
@@ -29,6 +34,8 @@ Later variants are failure-analysis or protocol-extension evidence, not replacem
 ## Source Boundary
 
 Original PDFs, local scripts, CARLA logs, generated files, and private notes remain outside this public kit. This folder only contains sanitized protocol summaries, diagrams, result excerpts, and limitations.
+
+The public packet validator confirms both frozen anchors, required metrics, claim-boundary text, and the sanitized scenario visuals referenced by the manifest.
 
 ## Minimal Runnable Check
 

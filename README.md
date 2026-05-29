@@ -27,6 +27,19 @@ and visible limits.
 
 Read: [Verification Principles](VERIFICATION_PRINCIPLES.md)
 
+## Proof at a Glance
+
+| Work | It works | Reproducible | Measured | Boundary |
+| --- | --- | --- | --- | --- |
+| [Cognitive OS API](https://github.com/lloitesa013/cognitive-os-api) | FastAPI evidence viewer and `/evidence/report` | Seed benchmark, baselines, conformance, adversarial runner | Gate accuracy 100%, trace completeness 100%, adversarial redaction pass 100% | Not AGI, not global LLM safety, not complete safety |
+| [Financial Agent Evidence OS](https://github.com/lloitesa013/stock-agent-harness-v0-2-0-defense) | Streamlit evidence viewer and release gates | Full unit suite plus release/audit/verifier commands | `118 tests OK`, 2 skipped; release comparison and tamper walkthrough | Not financial advice, not live trading, not future-return prediction |
+| [X-MoD Visual Paper Kit](research/xmod-visual-paper-kit/README.md) | Public visual packet and renderer | Sanitized CSV plus validation script | `gate_safety_event_corr=0.8035`; safety measured, other drives pending | Offline protocol evidence only |
+| [Angelos Reproducibility Kit](research/angelos-reproducibility-kit/README.md) | Public packet validator | Frozen anchors and manifest checks | `ped_surprise/v10`, `merge_cutin/v11`, 40 seeds each | CARLA protocol packet, not deployment readiness |
+
+![X-MoD drive alignment status](research/xmod-visual-paper-kit/assets/drive_alignment_status.svg)
+
+![Angelos pedestrian surprise schematic](research/angelos-reproducibility-kit/assets/scenario_ped_surprise.svg)
+
 ## Flagship Work
 
 ### Cognitive OS API
