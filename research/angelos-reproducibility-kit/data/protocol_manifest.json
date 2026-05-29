@@ -15,6 +15,10 @@
       "reading": "route-completion parity"
     }
   },
+  "scenario_visuals": {
+    "ped_surprise": "assets/scenario_ped_surprise.svg",
+    "merge_cutin": "assets/scenario_merge_cutin.svg"
+  },
   "required_metrics": [
     "collision",
     "intervention",

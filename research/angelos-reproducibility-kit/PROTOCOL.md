@@ -6,6 +6,8 @@ Angelos Protocol is a local CARLA closed-loop benchmark framing for top-level ju
 
 Anchor: `v10`, 40 matched seeds.
 
+Schematic: [Pedestrian Surprise](assets/scenario_ped_surprise.svg)
+
 Interpretation: pedestrian-priority behavior.
 
 Primary metrics:
@@ -24,6 +26,8 @@ Reading rule: a conservative pedestrian response may sacrifice progress, but it 
 ## Scenario 2: `merge_cutin`
 
 Anchor: `v11`, 40 matched seeds.
+
+Schematic: [Merge/Cut-In](assets/scenario_merge_cutin.svg)
 
 Interpretation: mobility-preserving scenario behavior.
 

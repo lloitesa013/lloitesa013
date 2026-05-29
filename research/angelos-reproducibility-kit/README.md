@@ -12,8 +12,10 @@ This kit is not the raw CARLA workspace. It is a scoped reproducibility packet f
 2. [Frozen-Anchor Results](RESULTS_TABLE.md)
 3. [Limitations And Non-Claims](LIMITATIONS_AND_NON_CLAIMS.md)
 4. [Pipeline Diagram](assets/angelos_pipeline.svg)
-5. [Reproduction Boundary](REPRODUCTION_BOUNDARY.md)
-6. [Public Packet Runbook](RUNBOOK.md)
+5. [Pedestrian Surprise Schematic](assets/scenario_ped_surprise.svg)
+6. [Merge/Cut-In Schematic](assets/scenario_merge_cutin.svg)
+7. [Reproduction Boundary](REPRODUCTION_BOUNDARY.md)
+8. [Public Packet Runbook](RUNBOOK.md)
 
 ## Frozen Anchors
 

@@ -57,6 +57,18 @@ def verify():
         require(seeds == {int(spec["seeds"])}, f"{scenario} seed mismatch: {seeds}")
         require("SC" in methods, f"{scenario} missing SC method row")
 
+    visuals = manifest.get("scenario_visuals", {})
+    require(set(visuals) == set(manifest["frozen_anchors"]), "scenario visual set mismatch")
+    kit_root = KIT_ROOT.resolve()
+    for scenario, relative_path in visuals.items():
+        require(str(relative_path).endswith(".svg"), f"{scenario} visual must be SVG")
+        visual_path = (KIT_ROOT / relative_path).resolve()
+        require(
+            str(visual_path).startswith(str(kit_root)),
+            f"{scenario} visual path escapes kit root",
+        )
+        require(visual_path.exists(), f"{scenario} visual missing: {relative_path}")
+
     boundary_text = " ".join(manifest.get("claim_boundary", [])).lower()
     require("deployment readiness" in boundary_text, "deployment boundary missing")
     require("universal" in boundary_text, "universal-claim boundary missing")

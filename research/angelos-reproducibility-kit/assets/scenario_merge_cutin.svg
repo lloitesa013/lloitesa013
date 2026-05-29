@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" role="img" aria-label="Merge cut-in sanitized scenario schematic">
+  <defs>
+    <style>
+      .bg{fill:#f7f9fb}.road{fill:#e8edf1;stroke:#c9d2da;stroke-width:2}.lane{stroke:#9aa8b3;stroke-width:3;stroke-dasharray:16 14}.ego{fill:#176b87}.npc{fill:#7c4d1d}.gate{fill:#fff;stroke:#176b87;stroke-width:2}.txt{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172026}.muted{fill:#5f6b73}.title{font-size:28px;font-weight:700}.label{font-size:15px;font-weight:700}.small{font-size:13px}.arrow{stroke:#2f6f4e;stroke-width:5;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#2f6f4e"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="900" height="520"/>
+  <text class="txt title" x="60" y="54">Merge/Cut-In Frozen Anchor</text>
+  <text class="txt muted small" x="60" y="82">Sanitized schematic for anchor v11, 40 matched seeds</text>
+  <rect class="road" x="80" y="145" width="740" height="190" rx="18"/>
+  <line class="lane" x1="100" y1="240" x2="800" y2="240"/>
+  <path class="arrow" d="M150 190 C260 188, 320 190, 430 190"/>
+  <path class="arrow" d="M420 295 C510 255, 570 222, 675 210"/>
+  <rect class="ego" x="255" y="168" width="84" height="42" rx="8"/>
+  <text class="txt small" x="275" y="194" fill="#fff">Ego</text>
+  <rect class="npc" x="470" y="270" width="94" height="42" rx="8"/>
+  <text class="txt small" x="488" y="296" fill="#fff">Cut-in</text>
+  <rect class="gate" x="605" y="160" width="135" height="95" rx="8"/>
+  <text class="txt label" x="626" y="190">SC Gate</text>
+  <text class="txt small" x="620" y="216">collision</text>
+  <text class="txt small" x="620" y="236">route parity</text>
+  <line class="arrow" x1="564" y1="290" x2="608" y2="242"/>
+  <rect class="gate" x="95" y="370" width="710" height="88" rx="8"/>
+  <text class="txt label" x="120" y="400">Reading Rule</text>
+  <text class="txt small" x="120" y="426">Success cannot come from stopping forever. The anchor checks mobility-preserving behavior and route-completion parity.</text>
+  <text class="txt muted small" x="60" y="492">No raw CARLA frame, log path, or private workspace asset is included.</text>
+</svg>

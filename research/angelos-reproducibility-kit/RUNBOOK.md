@@ -28,6 +28,7 @@ Expected result:
 - Required metric columns are present and numeric.
 - Each scenario includes an `SC` row.
 - Claim boundary text is present for deployment, universal-claim, and CARLA-scope limits.
+- Scenario schematics referenced by the manifest exist and are sanitized SVG files.
 
 ## What This Does Not Do
 
