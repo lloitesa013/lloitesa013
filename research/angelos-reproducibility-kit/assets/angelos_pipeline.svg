@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-label="Angelos OS SynOptic Core pipeline">
+  <defs>
+    <style>
+      .bg{fill:#f7f9fb}.box{fill:#fff;stroke:#cfd8df;stroke-width:2;rx:8}.gate{fill:#eef3f7;stroke:#176b87;stroke-width:2;rx:8}.warn{fill:#fff6e8;stroke:#a35b00;stroke-width:2;rx:8}.txt{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172026}.muted{fill:#5f6b73}.title{font-size:30px;font-weight:700}.label{font-size:17px;font-weight:700}.small{font-size:13px}.arrow{stroke:#176b87;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#176b87"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1100" height="560"/>
+  <text class="txt title" x="60" y="58">Angelos OS / SynOptic Core</text>
+  <text class="txt muted small" x="60" y="86">A top-level judgment layer between policy output and final action.</text>
+  <rect class="box" x="60" y="160" width="150" height="80"/>
+  <text class="txt label" x="104" y="194">Perceive</text>
+  <text class="txt muted small" x="86" y="220">state variables</text>
+  <rect class="box" x="260" y="160" width="160" height="80"/>
+  <text class="txt label" x="298" y="194">Propose</text>
+  <text class="txt muted small" x="286" y="220">candidate action</text>
+  <rect class="box" x="470" y="160" width="170" height="80"/>
+  <text class="txt label" x="508" y="194">Arbitrate</text>
+  <text class="txt muted small" x="502" y="220">value mediation</text>
+  <rect class="gate" x="700" y="160" width="160" height="80"/>
+  <text class="txt label" x="742" y="194">Gate</text>
+  <text class="txt muted small" x="726" y="220">allow / restrain</text>
+  <rect class="box" x="910" y="160" width="140" height="80"/>
+  <text class="txt label" x="952" y="194">Explain</text>
+  <text class="txt muted small" x="938" y="220">reason trace</text>
+  <path class="arrow" d="M210 200 H260"/>
+  <path class="arrow" d="M420 200 H470"/>
+  <path class="arrow" d="M640 200 H700"/>
+  <path class="arrow" d="M860 200 H910"/>
+  <rect class="warn" x="120" y="350" width="380" height="110"/>
+  <text class="txt label" x="150" y="386">ped_surprise v10</text>
+  <text class="txt muted small" x="150" y="414">Pedestrian-priority behavior</text>
+  <text class="txt muted small" x="150" y="438">SC: collision 0.000, latency 0.0757 ms, route 55.66 m</text>
+  <rect class="gate" x="600" y="350" width="380" height="110"/>
+  <text class="txt label" x="630" y="386">merge_cutin v11</text>
+  <text class="txt muted small" x="630" y="414">Route-completion parity</text>
+  <text class="txt muted small" x="630" y="438">SC: collision 0.000, RLV 0.000, latency 0.0702 ms, route 145.55 m</text>
+</svg>
+

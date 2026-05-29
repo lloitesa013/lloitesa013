@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-label="X-MoD four-drive routing architecture">
+  <defs>
+    <style>
+      .bg{fill:#f7f9fb}.box{fill:#fff;stroke:#cfd8df;stroke-width:2;rx:8}.drive{fill:#eef3f7;stroke:#176b87;stroke-width:2;rx:8}.txt{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172026}.muted{fill:#5f6b73}.title{font-size:30px;font-weight:700}.label{font-size:18px;font-weight:700}.small{font-size:14px}.arrow{stroke:#176b87;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#176b87"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1100" height="620"/>
+  <text class="txt title" x="60" y="58">X-MoD: Explainable Mixture-of-Drives</text>
+  <text class="txt muted small" x="60" y="86">Decision routing is tested by gate-event alignment, not only described after the fact.</text>
+  <rect class="box" x="60" y="150" width="190" height="90"/>
+  <text class="txt label" x="98" y="188">Input State</text>
+  <text class="txt muted small" x="88" y="216">CARLA features</text>
+  <rect class="box" x="320" y="150" width="190" height="90"/>
+  <text class="txt label" x="370" y="188">Encoder</text>
+  <text class="txt muted small" x="355" y="216">shared features</text>
+  <rect class="box" x="580" y="150" width="190" height="90"/>
+  <text class="txt label" x="642" y="188">Router</text>
+  <text class="txt muted small" x="610" y="216">drive weights</text>
+  <path class="arrow" d="M250 195 H320"/>
+  <path class="arrow" d="M510 195 H580"/>
+  <rect class="drive" x="120" y="340" width="180" height="90"/>
+  <text class="txt label" x="176" y="376">Safety</text>
+  <text class="txt muted small" x="148" y="404">ttc, front gap, ped</text>
+  <rect class="drive" x="340" y="340" width="180" height="90"/>
+  <text class="txt label" x="392" y="376">Legality</text>
+  <text class="txt muted small" x="366" y="404">traffic light, stopline</text>
+  <rect class="drive" x="560" y="340" width="180" height="90"/>
+  <text class="txt label" x="612" y="376">Comfort</text>
+  <text class="txt muted small" x="590" y="404">jerk, yaw rate</text>
+  <rect class="drive" x="780" y="340" width="180" height="90"/>
+  <text class="txt label" x="828" y="376">Efficiency</text>
+  <text class="txt muted small" x="822" y="404">speed, target speed</text>
+  <path class="arrow" d="M675 240 C620 285 270 292 210 340"/>
+  <path class="arrow" d="M675 240 C650 290 460 295 430 340"/>
+  <path class="arrow" d="M675 240 C685 292 655 305 650 340"/>
+  <path class="arrow" d="M675 240 C730 290 845 300 870 340"/>
+  <rect class="box" x="410" y="500" width="280" height="70"/>
+  <text class="txt label" x="460" y="532">Weighted Action</text>
+  <text class="txt muted small" x="468" y="556">steer, throttle, brake</text>
+  <path class="arrow" d="M210 430 C260 480 390 505 410 530"/>
+  <path class="arrow" d="M430 430 C450 470 470 500 500 500"/>
+  <path class="arrow" d="M650 430 C640 470 620 500 600 500"/>
+  <path class="arrow" d="M870 430 C815 480 700 505 690 530"/>
+</svg>
+

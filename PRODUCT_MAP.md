@@ -72,6 +72,9 @@ requiring the reader to parse every report.
 
 **User:** research mentor, workshop reviewer, or collaborator.
 
+**Current public status:** v1 kit available at
+[research/xmod-visual-paper-kit](research/xmod-visual-paper-kit/README.md).
+
 **MVP:**
 
 - Architecture diagram for four-drive routing.
@@ -97,6 +100,9 @@ requiring the reader to parse every report.
 **Purpose:** separate the judgment-layer idea from overbroad safety claims.
 
 **User:** autonomous driving or robotics reviewer.
+
+**Current public status:** v1 kit available at
+[research/angelos-reproducibility-kit](research/angelos-reproducibility-kit/README.md).
 
 **MVP:**
 

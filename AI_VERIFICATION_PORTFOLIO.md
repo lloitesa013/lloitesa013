@@ -80,8 +80,9 @@ layer that can restrain, gate, and explain candidate actions in CARLA scenarios.
 - Papers and technical reports kept as research artifacts, not as deployment
   claims.
 
-Public status: summarized here as research lineage. The raw local workspace
-should be sanitized before any standalone public release.
+Public status: summarized here as research lineage, with sanitized public kits
+available in [research](research/README.md). The raw local workspace remains
+private.
 
 ## Research Lineage
 
@@ -133,7 +134,8 @@ new unrelated projects. The priority order is:
 
 1. Cognitive OS demo polish.
 2. Evidence OS dashboard polish.
-3. X-MoD visual paper kit.
-4. Angelos/CARLA reproducibility kit.
+3. X-MoD visual paper kit: v1 public kit exists; next step is richer plots.
+4. Angelos/CARLA reproducibility kit: v1 public kit exists; next step is a
+   minimal runnable wrapper.
 
 See: [PRODUCT_MAP.md](PRODUCT_MAP.md)

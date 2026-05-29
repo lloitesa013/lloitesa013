@@ -14,7 +14,7 @@ trusted, scoped, reviewed, and sealed as evidence.
   system for financial AI agents.
 - **Research roots:** X-MoD and Angelos OS, autonomous-driving judgment-layer
   research.
-- **Next work:** polish the existing demos and evidence kits before starting new
+- **Next work:** deepen the existing demos and evidence kits before starting new
   projects.
 
 ## Flagship Work
@@ -67,10 +67,10 @@ restraint, explanation, and failure analysis must be tied to scenario evidence.
 - **X-MoD:** explainable routing over safety, legality, comfort, and efficiency.
 - **Angelos OS / SynOptic Core:** a model-agnostic judgment layer above driving
   policies, with safety gates and protocol-frozen evaluation.
-- **Status:** local research artifacts and papers, not yet a polished public
-  reproduction package.
-- **Next public step:** a visual paper kit and reproducibility kit, not a broad
-  safety or deployment claim.
+- **Public kits:** [X-MoD Visual Paper Kit](research/xmod-visual-paper-kit/README.md)
+  and [Angelos Reproducibility Kit](research/angelos-reproducibility-kit/README.md).
+- **Boundary:** these kits are sanitized research packets, not broad safety or
+  deployment claims.
 
 ## Portfolio Map
 
@@ -78,6 +78,7 @@ restraint, explanation, and failure analysis must be tied to scenario evidence.
 - [AI Judgment Lineage](AI_JUDGMENT_LINEAGE.md)
 - [Product Map](PRODUCT_MAP.md)
 - [Public / Private Split](PUBLIC_PRIVATE_SPLIT.md)
+- [Research Kits](research/README.md)
 
 ## Proof Surface
 
