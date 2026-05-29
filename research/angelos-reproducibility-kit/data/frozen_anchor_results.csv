@@ -1,0 +1,7 @@
+scenario,anchor,seeds,method,collision,intervention,near_miss,rlv,latency_ms,route_m,reading
+ped_surprise,v10,40,SC,0.000,0.0175,0.0021,0.00077,0.0757,55.66,pedestrian-priority behavior with mobility and legality caveats
+ped_surprise,v10,40,safety_baseline,0.000,0.0213,0.0034,0.00000,3.2542,3.64,stored baseline
+ped_surprise,v10,40,align_baseline,0.400,0.0212,0.0028,0.00000,3.2161,8.55,stored baseline
+merge_cutin,v11,40,SC,0.000,0.0387,0.0062,0.00000,0.0702,145.55,route-completion parity
+merge_cutin,v11,40,safety_baseline,0.000,0.0405,0.0062,0.00000,2.1729,145.55,stored baseline
+merge_cutin,v11,40,align_baseline,0.000,0.0368,0.0048,0.00000,2.2088,145.55,stored baseline

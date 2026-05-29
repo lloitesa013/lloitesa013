@@ -13,6 +13,7 @@ This kit is not the raw CARLA workspace. It is a scoped reproducibility packet f
 3. [Limitations And Non-Claims](LIMITATIONS_AND_NON_CLAIMS.md)
 4. [Pipeline Diagram](assets/angelos_pipeline.svg)
 5. [Reproduction Boundary](REPRODUCTION_BOUNDARY.md)
+6. [Public Packet Runbook](RUNBOOK.md)
 
 ## Frozen Anchors
 
@@ -27,7 +28,15 @@ Later variants are failure-analysis or protocol-extension evidence, not replacem
 
 Original PDFs, local scripts, CARLA logs, generated files, and private notes remain outside this public kit. This folder only contains sanitized protocol summaries, diagrams, result excerpts, and limitations.
 
+## Minimal Runnable Check
+
+This kit includes a public packet validator. It checks the sanitized manifest and
+frozen-anchor result table without running CARLA or reading private local files.
+
+```powershell
+python research\angelos-reproducibility-kit\scripts\verify_protocol_packet.py
+```
+
 ## Completion Signal
 
 This kit is complete when a reviewer can understand the protocol, the two frozen scenario anchors, the primary result table, and the limitations without seeing the mixed raw CARLA workspace.
-

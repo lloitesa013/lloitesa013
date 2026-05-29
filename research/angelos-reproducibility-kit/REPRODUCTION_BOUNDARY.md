@@ -7,6 +7,9 @@ This kit is a sanitized reproducibility surface. It tells a reviewer what would 
 - Scenario definitions.
 - Frozen anchor identifiers.
 - Primary result table.
+- Sanitized aggregate CSV.
+- Public protocol manifest.
+- Packet consistency validator.
 - Limitations and non-claims.
 - Public source boundary.
 
@@ -33,4 +36,3 @@ A standalone public package should include:
 - result tables
 - failure-analysis section
 - non-claim section
-

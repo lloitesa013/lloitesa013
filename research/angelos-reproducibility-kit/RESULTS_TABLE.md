@@ -25,3 +25,6 @@ RLV means red-light violation rate.
 
 The raw scripts and CARLA environment are not included in this public kit. This table is a sanitized evidence surface extracted from the private paper/source workspace.
 
+Machine-readable aggregate data is included at `data/frozen_anchor_results.csv`.
+The public packet validator checks this table against
+`data/protocol_manifest.json`.

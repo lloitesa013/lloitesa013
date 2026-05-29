@@ -1,0 +1,32 @@
+{
+  "packet_id": "angelos-public-reproducibility-kit-v1",
+  "protocol": "Angelos Protocol public packet",
+  "carla_version": "0.9.15",
+  "map": "Town03",
+  "frozen_anchors": {
+    "ped_surprise": {
+      "anchor": "v10",
+      "seeds": 40,
+      "reading": "pedestrian-priority behavior with mobility and legality caveats"
+    },
+    "merge_cutin": {
+      "anchor": "v11",
+      "seeds": 40,
+      "reading": "route-completion parity"
+    }
+  },
+  "required_metrics": [
+    "collision",
+    "intervention",
+    "near_miss",
+    "rlv",
+    "latency_ms",
+    "route_m"
+  ],
+  "claim_boundary": [
+    "protocol-frozen CARLA evidence for a top-level judgment layer",
+    "no real-world deployment readiness claim",
+    "no universal scenario coverage claim",
+    "no direct transfer claim from CARLA to road deployment"
+  ]
+}
