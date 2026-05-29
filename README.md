@@ -48,6 +48,20 @@ The lineage is:
 
 Read more: [AI Judgment Lineage](AI_JUDGMENT_LINEAGE.md)
 
+## Autonomous Driving Research Line
+
+X-MoD and Angelos OS are the research roots of this portfolio. They test the same
+judgment-layer idea in a harder setting: autonomous driving, where action,
+restraint, explanation, and failure analysis must be tied to scenario evidence.
+
+- **X-MoD:** explainable routing over safety, legality, comfort, and efficiency.
+- **Angelos OS / SynOptic Core:** a model-agnostic judgment layer above driving
+  policies, with safety gates and protocol-frozen evaluation.
+- **Status:** local research artifacts and papers, not yet a polished public
+  reproduction package.
+- **Next public step:** a visual paper kit and reproducibility kit, not a broad
+  safety or deployment claim.
+
 ## Portfolio Map
 
 - [AI Verification Portfolio](AI_VERIFICATION_PORTFOLIO.md)

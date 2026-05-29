@@ -62,6 +62,13 @@ requiring the reader to parse every report.
 - Negative-control summary.
 - One-page limitation and non-claim sheet.
 
+**Done when:**
+
+- A reader can understand the four-drive architecture from one diagram.
+- The safety-gate alignment result is visible as a plot, not only a table.
+- Negative controls are explained as part of the method, not as an appendix.
+- The kit states that this is research evidence, not deployment readiness.
+
 **Later version:**
 
 - Related work table.
@@ -81,6 +88,14 @@ requiring the reader to parse every report.
 - Result table.
 - Failure-analysis section.
 - Reproduction requirements.
+
+**Done when:**
+
+- The protocol can be read without opening every paper draft.
+- Each result table names scenario, seed count, metric, and claim boundary.
+- Mobility-freeze and legality tradeoffs are visible in the main evidence page.
+- The kit avoids universal safety language and separates local CARLA evidence
+  from real-world deployment claims.
 
 **Later version:**
 

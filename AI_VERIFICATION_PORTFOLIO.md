@@ -62,6 +62,27 @@ properly bounded.
 
 Repo: [stock-agent-harness-v0-2-0-defense](https://github.com/lloitesa013/stock-agent-harness-v0-2-0-defense)
 
+### X-MoD / Angelos OS Research Line
+
+**Purpose:** show where the judgment-layer architecture came from before it was
+generalized to LLMs and agent evidence.
+
+**System shape:** X-MoD routes driving decisions over explicit drives such as
+safety, legality, comfort, and efficiency. Angelos OS adds a top-level judgment
+layer that can restrain, gate, and explain candidate actions in CARLA scenarios.
+
+**Evidence surface:**
+
+- Offline routing evaluation, ablations, negative controls, and multi-seed
+  stability reports.
+- Closed-loop CARLA protocol runs with scenario-specific result tables.
+- Failure analysis around mobility freeze, legality tradeoffs, and scope limits.
+- Papers and technical reports kept as research artifacts, not as deployment
+  claims.
+
+Public status: summarized here as research lineage. The raw local workspace
+should be sanitized before any standalone public release.
+
 ## Research Lineage
 
 The earlier research line connects autonomous driving explainability to LLM and

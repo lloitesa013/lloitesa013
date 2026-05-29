@@ -33,6 +33,8 @@ These can become public only after rewriting:
 - Personal origin story.
 - Early supplementary papers.
 - Early autonomous driving reports.
+- Raw CARLA workspaces that contain mixed experiments, generated artifacts, or
+  private notes.
 - Failed experiments.
 - Notes that mention external people, schools, or private circumstances.
 
@@ -43,6 +45,8 @@ Rewrite requirements:
 - Add claim boundaries.
 - Add non-claims.
 - Make status clear: concept, prototype, benchmarked result, or product idea.
+- Publish only the sanitized reproduction surface, not the entire local
+  research workspace.
 
 ## Never Publish As-Is
 

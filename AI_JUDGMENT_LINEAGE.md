@@ -51,6 +51,11 @@ comfort, and efficiency, then test whether routing aligns with event labels.
 **Current evidence:** offline evaluation, negative controls, ablations, and
 multi-seed stability reports in the local research package.
 
+**Evidence discipline:** the important contribution is not only the routing
+architecture. It is the falsifiable test pattern: if a gate is claimed to
+represent safety, it should activate on safety-relevant events, fail under
+negative controls, and degrade visibly when the alignment condition is removed.
+
 **Not yet proven:** external baseline dominance, full-drive event alignment, or
 generalization across broad driving settings.
 
@@ -67,6 +72,10 @@ propose, score, gate, restrain, and explain.
 
 **Current evidence:** CARLA closed-loop reports, protocol-frozen comparisons,
 and failure analysis around mobility freeze and legality tradeoffs.
+
+**Evidence discipline:** the useful pattern is a separation between policy
+output and final action. The judgment layer can be evaluated as its own surface:
+scenario, seed, gate decision, trace, outcome, and non-claim boundary.
 
 **Not yet proven:** universal safety improvement or deployment readiness.
 
@@ -113,3 +122,12 @@ The shared identity across these projects is:
 
 > Judgment layers for AI systems: routing, restraint, trace, policy, protocol,
 > and evidence.
+
+## Reader Shortcut
+
+If a reviewer only has five minutes, the intended reading order is:
+
+1. Start with Cognitive OS to see the current flagship shape.
+2. Read Financial Agent Evidence OS to see claim discipline.
+3. Use X-MoD and Angelos OS as the autonomous-driving origin story.
+4. Treat Flow-Based AI Ethics as the conceptual seed, not the finished system.
