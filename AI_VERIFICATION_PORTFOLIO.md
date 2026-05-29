@@ -1,78 +1,118 @@
-# AI Verification Reference Architectures
+# AI Verification Portfolio
 
-I build reference architectures for verifying AI claims and decisions.
+I build judgment layers for AI systems: reference architectures that make model
+decisions traceable, safely gated, user-governed, and evidence-bound.
 
-I do not build more impressive AI outputs. I build systems that test whether AI
-outputs can be trusted, scoped, traced, and sealed as evidence.
+This document is the public portfolio hub. It is intentionally selective. The
+private archive keeps rough notes, drafts, admissions material, failed runs, and
+personal context. This public hub keeps only research and code that can be shown
+safely.
 
-## Thesis
+## Core Thesis
 
-Modern AI systems can generate persuasive outputs faster than teams can verify
-them. The hard problem is not only generation. It is knowing whether an AI claim
-or decision is reproducible, scoped, auditable, and safe to present.
+Modern AI systems can generate persuasive outputs faster than people can verify
+them. The hard problem is not only generation. It is knowing whether a model
+decision or system claim is reproducible, scoped, auditable, and safe to present.
 
-This portfolio has two connected tracks:
+My work has two connected tracks:
 
-- AI claim verification: can a performance or product claim survive evidence
-  gates and non-claim boundaries?
-- AI decision verification: can an LLM decision be gated, traced, redacted, and
-  reviewed before it becomes an action or public output?
+- **AI decision verification**: can a model output be gated, traced, redacted,
+  and reviewed before it becomes an action?
+- **AI claim verification**: can a benchmark or product claim survive evidence
+  gates, release gates, and non-claim boundaries?
 
-## Financial Agent Evidence OS
+## Flagship Projects
 
-Financial Agent Evidence OS is a financial AI claim verification reference
-architecture.
+### Cognitive OS API
 
-It is not a trading bot, not financial advice, and not live trading software.
-Its purpose is to verify whether financial-agent performance claims are scoped,
-reproducible, cost-aware, and sealed as reviewable evidence.
+**Purpose:** place a decision protocol above upstream LLM outputs.
 
-Key signals:
+**System shape:** profile policy is compiled into a Cognitive Configuration
+Profile, candidate model output is analyzed, and the system emits `ALLOW`,
+`DEGRADE`, `DENY`, or `HANDOFF` with a public decision envelope.
 
-- Benchmark and release gates for scoped public claims.
-- Evidence manifests, release seals, and reviewer-facing artifacts.
-- Non-claim discipline around financial advice, live trading readiness,
-  future-return guarantees, and market dominance.
-- v0.3 real-market sealed evidence that preserves weak candidate performance
-  instead of turning every benchmark into a promotional result.
-- v0.3.1 presentation UI for executive review of the evidence package.
+**Evidence surface:**
 
-Repo: [stock-agent-harness-v0-2-0-defense](https://github.com/lloitesa013/stock-agent-harness-v0-2-0-defense)
-
-## Cognitive OS API
-
-Cognitive OS API is an LLM decision, gate, and trace verification reference
-architecture.
-
-It is not a better LLM, not AGI, not a global safety guarantee, and not a
-universal harmful-response blocker. Its purpose is to place a decision protocol
-above upstream LLM outputs.
-
-Key signals:
-
-- Profile-to-policy compilation.
-- Scenario analysis and judgment over candidate LLM output.
-- `ALLOW`, `DEGRADE`, `DENY`, and `HANDOFF` gate decisions.
-- Redacted public decision envelopes with raw trace exposure disabled by
+- API endpoints for profile compilation, run, compare, trace, and validation.
+- Redacted public traces with raw local traces disabled from public output by
   default.
-- Benchmark and conformance runners for the included seed suite.
+- Seed benchmark and conformance runners.
+- Non-claims around AGI, global safety status, universal blocking, and complete
+  safety guarantees.
 
 Repo: [cognitive-os-api](https://github.com/lloitesa013/cognitive-os-api)
 
+### Financial Agent Evidence OS
+
+**Purpose:** verify financial-agent claims without presenting the system as a
+trading bot or investment tool.
+
+**System shape:** benchmark gates, release gates, evidence manifests, and
+reviewer-facing packets test whether a claim is scoped, reproducible, and
+properly bounded.
+
+**Evidence surface:**
+
+- Downside-aware backtest verification harness.
+- Evidence packets, release seals, and reproduction commands.
+- Public non-claims around financial advice, live trading readiness, future
+  return promises, and market dominance.
+- Real-market defense material that preserves weak evidence instead of turning
+  every result into promotion.
+
+Repo: [stock-agent-harness-v0-2-0-defense](https://github.com/lloitesa013/stock-agent-harness-v0-2-0-defense)
+
+## Research Lineage
+
+The earlier research line connects autonomous driving explainability to LLM and
+agent governance.
+
+| Stage | Recipe | What it contributed |
+| --- | --- | --- |
+| Flow-Based AI Ethics Model | Ethical cognition flow | Emotion, perception, simulation, evaluation, and decision as a structured loop. |
+| Explainable Autonomous Simulation | CARLA interpretability demo | A first attempt to make autonomous decisions visible rather than opaque. |
+| X-MoD | Explainable routing | Explicit drives such as safety, legality, comfort, and efficiency. |
+| Angelos OS | Safety-gated judgment | A model-agnostic restraint layer above autonomous policies. |
+| Cognitive OS | User-owned policy | Policy profiles and decision gates above LLM outputs. |
+| Evidence OS | Claim verification | Evidence packets and release gates for agent claims. |
+
+Full lineage: [AI_JUDGMENT_LINEAGE.md](AI_JUDGMENT_LINEAGE.md)
+
+## Evidence Matrix
+
+| Project | Code | Tests / gates | Evidence artifacts | Public role |
+| --- | --- | --- | --- | --- |
+| Cognitive OS API | Yes | Benchmark and conformance runners | Decision envelopes and traces | Flagship decision protocol |
+| Financial Agent Evidence OS | Yes | Benchmark, release, and replay gates | Evidence packets and release seals | Evidence discipline |
+| X-MoD / Angelos OS | Local research artifacts | Offline and CARLA evaluation reports | Papers and technical reports | Research lineage |
+| Flow-Based AI Ethics Model | Conceptual paper | Not a benchmarked system | Architecture note | Concept origin |
+
 ## What This Shows
 
-- I can design AI systems around evidence, traceability, and scoped claims.
-- I can turn a prototype into a reviewable reference architecture with docs,
-  tests, gates, and release artifacts.
-- I can preserve unfavorable evidence instead of hiding it or overstating the
-  result.
+- I can design systems around traceability, scope, and reviewable evidence.
+- I can turn prototypes into reference architectures with docs, tests, gates,
+  and release artifacts.
+- I can preserve unfavorable results instead of hiding them.
 - I can separate demo value from public claim boundaries.
 
 ## What This Does Not Claim
 
 - No external adoption claim.
-- No global SOTA claim outside the included benchmark suites.
+- No global SOTA status outside the included benchmark suites.
+- No AGI claim.
 - No live trading readiness or investment-performance claim.
 - No complete AI safety guarantee.
 - No claim that these reference architectures are enterprise-ready without
   further hardening.
+
+## Next Work
+
+The next implementation phase should start from the product map rather than from
+new unrelated projects. The priority order is:
+
+1. Cognitive OS demo polish.
+2. Evidence OS dashboard polish.
+3. X-MoD visual paper kit.
+4. Angelos/CARLA reproducibility kit.
+
+See: [PRODUCT_MAP.md](PRODUCT_MAP.md)
