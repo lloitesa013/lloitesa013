@@ -17,6 +17,16 @@ trusted, scoped, reviewed, and sealed as evidence.
 - **Next work:** deepen the existing demos and evidence kits before starting new
   projects.
 
+## Final Standard
+
+**Works. Reproducible. Measured. Understandable. Bounded.**
+
+The public portfolio should not rely on "I am impressive" as a claim. It should
+show running code, reproducible evidence, measurable gates, clear explanations,
+and visible limits.
+
+Read: [Verification Principles](VERIFICATION_PRINCIPLES.md)
+
 ## Flagship Work
 
 ### Cognitive OS API
@@ -76,6 +86,7 @@ restraint, explanation, and failure analysis must be tied to scenario evidence.
 
 - [AI Verification Portfolio](AI_VERIFICATION_PORTFOLIO.md)
 - [AI Judgment Lineage](AI_JUDGMENT_LINEAGE.md)
+- [Verification Principles](VERIFICATION_PRINCIPLES.md)
 - [Product Map](PRODUCT_MAP.md)
 - [Public / Private Split](PUBLIC_PRIVATE_SPLIT.md)
 - [Research Kits](research/README.md)

@@ -128,6 +128,8 @@ requiring the reader to parse every report.
 
 ## Guardrails
 
+- Every public project should satisfy the verification standard:
+  works, reproducible, measured, understandable, and bounded.
 - Do not start a new project until the current priority has a clear demo and
   evidence page.
 - Do not add broad claims without a claim boundary.
