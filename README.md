@@ -1,5 +1,7 @@
 # lloitesa013
 
+[![Research Kit Verification CI](https://github.com/lloitesa013/lloitesa013/actions/workflows/research-kit-ci.yml/badge.svg)](https://github.com/lloitesa013/lloitesa013/actions/workflows/research-kit-ci.yml)
+
 **I build judgment layers for AI systems.**
 
 My work focuses on systems that make model decisions traceable, safely gated,

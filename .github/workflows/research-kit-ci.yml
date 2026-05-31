@@ -1,0 +1,36 @@
+name: Research Kit Verification CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  verify-research-kits:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: read
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v5
+
+    - name: Set up Python
+      uses: actions/setup-python@v6
+      with:
+        python-version: '3.11'
+
+    - name: Validate X-MoD drive alignment boundary
+      run: |
+        python research/xmod-visual-paper-kit/scripts/validate_drive_alignment.py
+
+    - name: Render X-MoD visual kit and check committed assets
+      run: |
+        python research/xmod-visual-paper-kit/scripts/render_visuals.py
+        git diff --exit-code -- research/xmod-visual-paper-kit/assets
+
+    - name: Verify Angelos public protocol packet
+      run: |
+        python research/angelos-reproducibility-kit/scripts/verify_protocol_packet.py
