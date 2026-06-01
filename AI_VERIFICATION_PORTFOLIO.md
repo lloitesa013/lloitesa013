@@ -100,6 +100,8 @@ agent governance.
 
 Full lineage: [AI_JUDGMENT_LINEAGE.md](AI_JUDGMENT_LINEAGE.md)
 
+Role map: [ROLE_POSITIONING.md](ROLE_POSITIONING.md)
+
 ## Evidence Matrix
 
 | Project | Code | Tests / gates | Evidence artifacts | Public role |
@@ -116,6 +118,8 @@ Full lineage: [AI_JUDGMENT_LINEAGE.md](AI_JUDGMENT_LINEAGE.md)
   and release artifacts.
 - I can preserve unfavorable results instead of hiding them.
 - I can separate demo value from public claim boundaries.
+- I can map research artifacts to concrete AI evaluation, trust and safety,
+  LLMOps, and evidence-governed product functions without claiming adoption.
 
 ## What This Does Not Claim
 

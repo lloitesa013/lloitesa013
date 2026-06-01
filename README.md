@@ -28,6 +28,7 @@ show running code, reproducible evidence, measurable gates, clear explanations,
 and visible limits.
 
 Read: [Verification Principles](VERIFICATION_PRINCIPLES.md)
+Role map: [Role Positioning](ROLE_POSITIONING.md)
 
 ## Proof at a Glance
 
@@ -102,6 +103,7 @@ restraint, explanation, and failure analysis must be tied to scenario evidence.
 - [AI Verification Portfolio](AI_VERIFICATION_PORTFOLIO.md)
 - [AI Judgment Lineage](AI_JUDGMENT_LINEAGE.md)
 - [Verification Principles](VERIFICATION_PRINCIPLES.md)
+- [Role Positioning](ROLE_POSITIONING.md)
 - [Product Map](PRODUCT_MAP.md)
 - [Public / Private Split](PUBLIC_PRIVATE_SPLIT.md)
 - [Research Kits](research/README.md)
