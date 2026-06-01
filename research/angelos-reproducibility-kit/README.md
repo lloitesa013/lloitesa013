@@ -6,6 +6,9 @@ Angelos OS / SynOptic Core is a top-level judgment layer above autonomous-drivin
 
 This kit is not the raw CARLA workspace. It is a scoped reproducibility packet for the protocol-frozen evidence anchors described in the paper draft.
 
+Source boundary: this kit uses sanitized protocol evidence only. See
+[../CARLA_SOURCE_BOUNDARY.md](../CARLA_SOURCE_BOUNDARY.md).
+
 ## What To Read First
 
 1. [Protocol Summary](PROTOCOL.md)
@@ -34,6 +37,9 @@ Later variants are failure-analysis or protocol-extension evidence, not replacem
 ## Source Boundary
 
 Original PDFs, local scripts, CARLA logs, generated files, and private notes remain outside this public kit. This folder only contains sanitized protocol summaries, diagrams, result excerpts, and limitations.
+
+The private numbered CARLA scripts are provenance, not the public reproduction
+interface. See [../LEGACY_EXPERIMENT_MAP.md](../LEGACY_EXPERIMENT_MAP.md).
 
 The public packet validator confirms both frozen anchors, required metrics, claim-boundary text, and the sanitized scenario visuals referenced by the manifest.
 

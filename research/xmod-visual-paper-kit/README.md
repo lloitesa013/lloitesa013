@@ -6,6 +6,9 @@ X-MoD is an explainable routing architecture for autonomous-driving decisions. I
 
 This kit is not the full raw CARLA workspace. It is a reviewer-facing visual packet that explains the core architecture, the primary gate-event alignment result, the negative-control pattern, and the current limitations.
 
+Source boundary: this kit uses sanitized aggregate evidence only. See
+[../CARLA_SOURCE_BOUNDARY.md](../CARLA_SOURCE_BOUNDARY.md).
+
 ## What To Read First
 
 1. [One-Page Evidence](ONE_PAGE_EVIDENCE.md)
@@ -36,6 +39,9 @@ Drive validation boundary: safety is measured with event-label correlation; lega
 ## Source Boundary
 
 Original PDFs, local scripts, CARLA logs, generated files, and private notes remain outside this public kit. This folder only contains sanitized summaries, diagrams, and result excerpts.
+
+The private numbered CARLA scripts are provenance, not the public reproduction
+interface. See [../LEGACY_EXPERIMENT_MAP.md](../LEGACY_EXPERIMENT_MAP.md).
 
 ## Drive Validation Boundary
 
