@@ -15,7 +15,8 @@ trusted, scoped, reviewed, and sealed as evidence.
 - **Evidence discipline:** Financial Agent Evidence OS, a claim and release-gate
   system for financial AI agents.
 - **Research roots:** X-MoD and Angelos OS, autonomous-driving judgment-layer
-  research.
+  research — now public as [closed-loop interpretable driving](https://github.com/lloitesa013/xmod-interpretable-driving)
+  and a [reproducible failure taxonomy](https://github.com/lloitesa013/bench2drive-failure-taxonomy).
 - **Next work:** deepen the existing demos and evidence kits before starting new
   projects.
 
@@ -36,7 +37,8 @@ Role map: [Role Positioning](ROLE_POSITIONING.md)
 | --- | --- | --- | --- | --- |
 | [Cognitive OS API](https://github.com/lloitesa013/cognitive-os-api) | FastAPI evidence viewer and `/evidence/report` | Seed benchmark, baselines, conformance, adversarial runner | Gate accuracy 100%, trace completeness 100%, adversarial redaction pass 100% | Not AGI, not global LLM safety, not complete safety |
 | [Financial Agent Evidence OS](https://github.com/lloitesa013/stock-agent-harness-v0-2-0-defense) | Streamlit evidence viewer and release gates | Full unit suite plus release/audit/verifier commands | `118 tests OK`, 2 skipped; release comparison and tamper walkthrough | Not financial advice, not live trading, not future-return prediction |
-| [X-MoD Visual Paper Kit](research/xmod-visual-paper-kit/README.md) | Public visual packet and renderer | Sanitized CSV plus validation script | `gate_safety_event_corr=0.8035`; safety measured, other drives pending | Offline protocol evidence only |
+| [X-MoD on Bench2Drive](https://github.com/lloitesa013/xmod-interpretable-driving) | Closed-loop B2D agent, paper, eval harness | Code plus 3-seed eval protocol, claims/non-claims | Unseen route 24330: `100%` completion, `0` collisions across 3 seeds; gate/safety corr `0.80` | Does not generalize uniformly; completion uses a classical control stack |
+| [Bench2Drive Failure Taxonomy](https://github.com/lloitesa013/bench2drive-failure-taxonomy) | Reproducible SOTA baseline plus per-route failure map | Two harnesses, per-route evidence, calibration tooling | LEAD/TransFuser-V6 DS `93.36` vs PDM-Lite `95.71`; per-route failure buckets | Single-GPU/seed; not a new SOTA |
 | [Angelos Reproducibility Kit](research/angelos-reproducibility-kit/README.md) | Public packet validator | Frozen anchors and manifest checks | `ped_surprise/v10`, `merge_cutin/v11`, 40 seeds each | CARLA protocol packet, not deployment readiness |
 
 ![X-MoD drive alignment status](research/xmod-visual-paper-kit/assets/drive_alignment_status.svg)
@@ -93,8 +95,12 @@ restraint, explanation, and failure analysis must be tied to scenario evidence.
 - **X-MoD:** explainable routing over safety, legality, comfort, and efficiency.
 - **Angelos OS / SynOptic Core:** a model-agnostic judgment layer above driving
   policies, with safety gates and protocol-frozen evaluation.
-- **Public kits:** [X-MoD Visual Paper Kit](research/xmod-visual-paper-kit/README.md)
-  and [Angelos Reproducibility Kit](research/angelos-reproducibility-kit/README.md).
+- **Public repos:** [X-MoD on Bench2Drive](https://github.com/lloitesa013/xmod-interpretable-driving)
+  (closed-loop interpretable driving, paper, and eval harness) and
+  [Bench2Drive Failure Taxonomy](https://github.com/lloitesa013/bench2drive-failure-taxonomy)
+  (reproducible SOTA baseline plus per-route failure map); plus the offline
+  [X-MoD Visual Paper Kit](research/xmod-visual-paper-kit/README.md) and
+  [Angelos Reproducibility Kit](research/angelos-reproducibility-kit/README.md).
 - **Boundary:** these kits are sanitized research packets, not broad safety or
   deployment claims.
 
